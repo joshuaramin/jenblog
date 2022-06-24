@@ -6,7 +6,7 @@ import HtmlParser from 'react-html-parser'
 import styles from '../../../styles/dashboard/components/id.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import Edit from './edit'
+import Edit from '../../../components/dashboard/edit'
 import Post from '../../../components/dashboard/post'
 export const getStaticPaths = async () => {
 

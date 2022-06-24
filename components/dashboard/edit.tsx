@@ -4,9 +4,9 @@ const RichTextEditor = dynamic(() => import('@mantine/rte'), {
   ssr: false
 })
 import React, { useState } from 'react'
-import styles from '../../../styles/dashboard/components/edit.module.scss'
+import styles from '../../styles/dashboard/components/edit.module.scss'
 import {  useMutation } from '@apollo/client'
-import { updatePost } from '../../../components/graphql/postCreateSchema'
+import { updatePost } from '../graphql/postCreateSchema'
 import { useRouter } from 'next/router'
 
 
