@@ -1,0 +1,95 @@
+@import "../variables";
+@import '../mixin';
+.container {
+    width: 100%;
+    min-height: 600px;
+    max-height: 100%;
+    .opt {
+        width: 100%;
+        div {
+            @include curr;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                margin: 0;
+            }
+            button {
+                height: 30px;
+                width: 30px;
+                border: none;
+                background-color: #000;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:disabled {
+                    background-color: #ccc;
+                    
+                cursor: not-allowed;
+                }
+            }
+        }
+        .buttons{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            button {
+                height: 30px;
+                width: 30px;
+                border: none;
+                margin: 0 0 0 5px;
+                background-color: #000;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:disabled {
+                    background-color: #ccc;
+                    
+                cursor: not-allowed;
+                }
+            }
+        }
+
+        .con {
+            @include curr;
+            @include dashCon;
+            .box {
+                width: 100%;
+                min-height: 80px;
+                max-height: 100%;
+                margin: 15px 0;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                padding: 10px 15px;
+     
+                h2 {
+                    width: 100%;
+                    font-family: "Open Sans";
+                    font-weight: 500;
+                    font-size: 18px;         
+                     &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                span {
+                    width: 100%;
+                    @include phone
+                }
+                .buttons {
+                    width: auto;
+
+                    button {
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

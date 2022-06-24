@@ -1,0 +1,73 @@
+@import "../mixin";
+.container {
+    width: 100%;
+    min-height: max(600px, 100%);
+    max-height: 100%;
+    .opt {
+        height: auto;
+        @include curr;
+         div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h2 {
+                margin: 0;
+            }
+            button {
+                height: 30px;
+                width: 30px;
+                border: none;
+                background-color: #000;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+         }
+    }
+    .buttons {
+        
+        @include curr; 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+         button {
+            height: 30px;
+            width: 30px;
+            border: none;
+            margin: 0 0px 0px 5px;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            cursor: pointer;
+            &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+        }
+    }
+    .con {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        grid-gap: 5px;
+        div{
+            width: auto;
+            height: 100%;
+            .imageContainer {
+                width: auto;
+                height: auto;
+                margin: 0;
+                
+            }
+            span {
+               
+            }
+        }
+    }
+}

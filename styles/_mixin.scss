@@ -1,0 +1,24 @@
+@mixin resize($args){
+   @media (max-width: $args){
+      @content;
+   }
+}
+@mixin phone {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+
+
+
+
+@mixin curr {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@mixin dashCon {
+    display: block;
+}

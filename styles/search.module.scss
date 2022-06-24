@@ -1,0 +1,34 @@
+@import "./mixin";
+@import "./variables";
+.container {
+    width: 100%;
+    .card {
+        width: 80%;
+        border-style: solid;
+        border-image: linear-gradient(to left, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) 5;
+        background-size: 100%, 100%;
+        padding: 10px;
+        margin: 10px auto;
+        .titleHolder {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: content;
+            justify-content:center;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            h2 {
+                width: 100%;
+                font-family: $fontText;
+                font-weight: $fontWTT;
+                font-size: $fontHeaders;
+                margin: 0;
+
+             
+            }
+        }
+        .author {
+
+        }
+    }
+}

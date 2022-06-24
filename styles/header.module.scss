@@ -1,0 +1,24 @@
+@import "./variables";
+@import './mixin';
+.container {
+    width: 100%;
+    height: 110px;
+    .con {
+        @include curr;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            font-family: $fontTitle;
+            font-size: $fontSTitle;
+        }
+        button {
+            border: none;
+            padding: 5px 10px;
+            background-color:#000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

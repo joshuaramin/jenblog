@@ -1,0 +1,57 @@
+@import '../mixin';
+@import '../variables';
+
+
+.container {
+    width: 100%;
+    min-height: 600px;
+    max-height: 100%;
+    .backBtn {
+        @include curr;
+        button {
+            display: flex;
+            align-items: center;
+            background-color: #000;
+            color:  #fff;
+            font-weight: bold;
+        }
+    }
+    .con {
+        @include curr;
+        width: 80% !important;
+        .parser {
+            width: 100%;
+            margin: 0 auto;
+            .title {
+                width: 100%;
+                text-align: center;
+            }
+            div {
+                text-align: justify;
+            }
+        }  
+        .author {
+            display: flex;
+            align-items: center;
+            div {
+                margin: 0 10px 0 0;
+                border-radius:100px;
+                width: 30px;
+                height: 30px;
+                overflow: hidden;
+            }
+            span {
+                margin: 0;
+                font-size: 18px;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: bolder;
+            }
+            .date {
+                color: #bbb;
+                margin: 0 2px;
+            }
+        }
+    }
+    
+}

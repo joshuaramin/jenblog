@@ -1,0 +1,60 @@
+@import '../../_mixin';
+@import '../../variables';
+.container {
+    width: 100%;
+    min-height: 600px;
+    max-height: 100%;
+    .opt {
+        @include curr;
+        .optBtn {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            float: right;
+        }
+        .options {
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            position: absolute;
+            right: 120px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .delBtn {
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+                margin: 10px;
+                padding: 5px;
+                &:hover {
+                    border-bottom: 1px solid #ccc;
+                }
+                
+            }
+        }
+    }
+    .con {
+        @include curr;
+        div {
+            .title {
+                width: 100%;
+                text-align: center;
+                font-size: 2.5rem;
+            }
+           .parse {
+            code {
+                background-color: #aaaaaa;
+            }
+            p {
+                text-align: justify;
+            }
+            iframe {
+                width: 100%;
+                height: 700px;
+            }
+           }
+        }
+    }
+}
