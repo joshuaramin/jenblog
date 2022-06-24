@@ -10,7 +10,7 @@ import Cookie from 'js-cookie'
 import { GetServerSideProps } from 'next'
 
 const uploadLink = createUploadLink({
-  uri: process.env.production,
+  uri: "https://blogapies.herokuapp.com/graphql",
   credentials: "include",
   headers: {
     'Apollo-Require-Preflight': 'true',
